@@ -1,30 +1,56 @@
 body {
+  background-color: white;
+}
+
+.titleblock{
   background-color: lightblue;
+  padding: 5px;
 }
 
 .section1 {
-  background-color: lightgreen;
+  background-color: rgb(24, 190, 24);
     padding: 20px;
     margin: 15px;
-    border: 2px solid green;
+    border: 2px solid white;
 }
 
 #detailsPage {
   font-family: Arial, sans-serif;
-    color: darkblue;
+    color: black;
     line-height: 1.6;
+    text-align: center;
+    margin: 0px;
 }
 
 .pageTitle {
-  font-size: 40px;
+  font-size: 70px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
+    color: rgb(208, 133, 22);
 }
 
 #caption {
-  font-size: 20px;
+  font-size: 30px;
     font-style: italic;
     text-align: center;
     margin-bottom: 20px;
+}
+
+#section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+}
+
+.block {
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgb(24, 190, 24);
+  padding: 24px;
+  box-sizing: border-box;
+  margin: 0px;
 }
