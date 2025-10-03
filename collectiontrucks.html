@@ -23,9 +23,54 @@
     </section>
 
     <section id="infosection">
-         <div class="info">Register Here</div>
-        <div class="info">Pick up sites locations</div>
-        <div class="info">Statistics</div>       
+         <div class="info">
+            <label for="companyName">Name of Company</label>
+<input id="companyName" name="companyName" type="text" placeholder="Name of Company" />
+
+<label for="emailAddress">Email Address</label>
+<input id="emailAddress" name="emailAddress" type="email" placeholder="Email Address" />
+
+<label>Locations</label>
+<div class="location-group">
+  <select id="locationSelect" name="locations">
+    <option value="" disabled selected>Select Location</option>
+    <option value="loc1">Location 1</option>
+    <option value="loc2">Location 2</option>
+    <option value="loc3">Location 3</option>
+  </select>
+  <button id="addLocationBtn" type="button">Add Location</button>
+</div>
+<div id="extraLocationsContainer"></div>
+
+<label>Truck Details</label>
+<div class="truck-headers">
+  <div>Truck Number Plate</div>
+  <div>Weight (kg)</div>
+  <div>Volume (m³)</div>
+</div>
+
+<div id="trucksContainer">
+  <div class="truck-row">
+    <input name="truckNumberPlate[]" type="text" placeholder="Number Plate" />
+    <input name="truckWeight[]" type="number" min="0" placeholder="Weight" />
+    <input name="truckVolume[]" type="number" min="0" placeholder="Volume" />
+  </div>
+</div>
+
+<button id="addTruckBtn" type="button">Add Another Truck</button>
+
+
+         </div>
+         
+        <div class="info">
+            Pick up sites locations
+        </div>
+
+        <div class="info">
+            insert the charts but ask chat that it must use life data that update,
+             data must be total weight collected and registered trucks
+        </div>       
     </section>
 
+<script src="form-dynamic.js"></script>
 </html>
