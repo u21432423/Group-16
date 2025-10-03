@@ -1,12 +1,7 @@
-// Wait for the DOM to load before attaching events (optional but good practice)
 document.addEventListener('DOMContentLoaded', function () {
+  // Trucks code (unchanged)
   const addTruckBtn = document.getElementById('addTruckBtn');
   const trucksContainer = document.getElementById('trucksContainer');
-  const addLocationBtn = document.getElementById('addLocationBtn');
-  const locationSelect = document.getElementById('locationSelect');
-  const extraLocationsContainer = document.getElementById('extraLocationsContainer');
-
-  // Add another truck row dynamically
   addTruckBtn.addEventListener('click', () => {
     const newTruckRow = document.createElement('div');
     newTruckRow.classList.add('truck-row');
@@ -18,20 +13,32 @@ document.addEventListener('DOMContentLoaded', function () {
     trucksContainer.appendChild(newTruckRow);
   });
 
-  // Add an extra location input based on selected dropdown location
+  // Locations code (updated for dropdowns)
+  const addLocationBtn = document.getElementById('addLocationBtn');
+  const locationSelect = document.getElementById('locationSelect');
+  const extraLocationsContainer = document.getElementById('extraLocationsContainer');
+
   addLocationBtn.addEventListener('click', () => {
-    const selectedValue = locationSelect.value;
-    if (!selectedValue) {
+    // Optionally: Don't add if nothing is selected
+    if (!locationSelect.value) {
       alert('Please select a location first.');
       return;
     }
-    const locInput = document.createElement('input');
-    locInput.type = 'text';
-    locInput.name = 'extraLocations[]';
-    locInput.value = locationSelect.options[locationSelect.selectedIndex].text;
-    locInput.readOnly = true;
-    locInput.style.marginTop = '10px';
-    extraLocationsContainer.appendChild(locInput);
+
+    // Create new select (dropdown) element
+    const newSelect = document.createElement('select');
+    newSelect.name = 'locations[]';
+    newSelect.style.marginTop = '10px';
+    // Duplicate options from the original select
+    Array.from(locationSelect.options).forEach(opt => {
+      newSelect.appendChild(opt.cloneNode(true));
+    });
+    // Set selected to the last chosen
+    newSelect.value = locationSelect.value;
+
+    extraLocationsContainer.appendChild(newSelect);
+
+    // Reset main select for next input
     locationSelect.value = '';
   });
 });
