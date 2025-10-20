@@ -124,3 +124,10 @@ select {
   font-size: 18px;
   font-weight: bold;
 }
+
+.info img {
+  display: block;
+  margin: 20px auto;
+  outline: black solid 5px;
+  
+}
