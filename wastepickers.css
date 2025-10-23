@@ -3,6 +3,8 @@
   padding: 5px;
   margin-bottom: 5px;
   outline: black solid 1px;
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.3589743589743589rem + 0.17094017094017094vw, 2rem);
 }
 
 .pageTitle {
@@ -50,6 +52,7 @@
   gap: 15px;
   width: 100%;
   margin-bottom: 15px;
+  
 }
 
 
@@ -57,6 +60,8 @@ form {
   display: flex;
   flex-direction: column;
   width: 100%;
+  
+  
 }
 
 
@@ -72,6 +77,8 @@ button{
   border-radius: 5px;
   margin-top: 20px;
   font-size: larger;
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.3589743589743589rem + 0.17094017094017094vw, 2rem);
 }
 
 #addButton {
@@ -86,6 +93,7 @@ button{
   gap: 10px;
   margin-top: 8px;
   align-items: center;
+  
 }
 
 select {
@@ -104,6 +112,8 @@ select {
   border-radius: 6px;
   box-sizing: border-box;
   border: 2px solid black;
+  
+
 }
 
 .bullet-list {
@@ -123,11 +133,13 @@ select {
   text-align: left;
   font-size: 18px;
   font-weight: bold;
+  
 }
 
 .info img {
   display: block;
   margin: 20px auto;
   outline: black solid 5px;
+  
   
 }

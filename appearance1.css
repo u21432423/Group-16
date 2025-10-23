@@ -9,6 +9,7 @@
   color: white;
   text-align: center;
   height: 415px;
+  
 
   } 
 
@@ -37,6 +38,7 @@
   padding: 100px 20px;
   color: white;
   text-align: centersection 3
+  
 
 }
 
@@ -50,6 +52,9 @@
     font-weight: bolder;
     font-family:"Poppins", sans-serif;
     letter-spacing: 10px;
+    
+    
+    
 }
 
 .join-button{
@@ -78,6 +83,8 @@ h2{
     font-weight: bolder;
     text-align: center;
     letter-spacing: 4px;
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.3589743589743589rem + 0.17094017094017094vw, 2rem);
 }
 
 .section {
@@ -90,6 +97,7 @@ h2{
   display: flex;
   justify-content: space-around;
   margin-top: 100px;
+  
 }
 
 .boxAround {
@@ -101,4 +109,5 @@ h2{
     border-radius: 6px;
     font-size: xx-large;
     box-shadow: black 5px 5px 5px;
+    
 }
