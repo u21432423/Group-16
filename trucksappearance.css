@@ -185,3 +185,18 @@ Button {
   margin: 20px auto;
   outline: black solid 5px;
 }
+
+.headerofpage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.box {
+  text-align: center;
+  border: 2px solid black;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(208, 133, 22);
+  font-weight: bold;
+}

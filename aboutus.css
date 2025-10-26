@@ -12,6 +12,7 @@ body {
   font-size: 1rem;
   font-size: clamp(1rem, 0.3589743589743589rem + 0.17094017094017094vw, 2rem);
 }
+
 .section1 {
   background-color: rgb(24, 190, 24);
     padding: 20px;
@@ -20,6 +21,7 @@ body {
     outline: black solid 1px;
     text-align: center;
 }
+
 .pageTitle {
   font-size: 70px;
     font-weight: bold;
@@ -44,3 +46,17 @@ body {
   outline: black solid 3px;
 }
 
+.header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.box {
+  text-align: center;
+  border: 2px solid black;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(208, 133, 22);
+  font-weight: bold;
+}
