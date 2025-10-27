@@ -1,3 +1,12 @@
+BFB semester project
+Group 16
+Heinrich Alberts u22611632
+Luan Mulder u22564790
+Marta Jhina u21432423
+Project Title:
+
+Informal waste picker logistics web application
+
 Project Purpose:
 
 Our group was tasked to develop a practical and impactful project that explores a real-world supply chain problem. We decided to delve into the environmental sector and this linked us directly to one of the major contributors to having clean communities, informal waste pickers. 
