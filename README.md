@@ -6,6 +6,7 @@ Having these two services, informal waste pickers will be able to focus more on 
 We are also going to have a system by where the waste pickers can have a designated area of material retrieval and this will benefit them with a reduced amount of territorial disputes and create a chance of fairness for them. 
 
 Database Schema:
+Databases have been generated according to the ERD. Random data was generated to fill and complete the tables. 
 
 
 
@@ -17,7 +18,7 @@ ERD:
 
 
  
-+
+
 Steps on how to run project:
 1.	Home page will display three buttons. 
 2.	Collection trucks will lead you to a page whereby a truck can be registered and this small form containing all the details will be sent to us. 
