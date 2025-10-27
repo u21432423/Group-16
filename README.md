@@ -28,3 +28,5 @@ Steps on how to run project:
 7.	The next page can be accessed via the navigation bar and this can be about us page. 
 8.	Here is a small paragraph of EcoConnect as a company and our aim towards the community and informal waste pickers. 
 9.	Pictures are also included in this page
+    
+<img width="857" height="643" alt="Screenshot 2025-10-27 at 08 31 24" src="https://github.com/user-attachments/assets/9175dc18-640d-4286-a4d3-eab1aebba064" />
