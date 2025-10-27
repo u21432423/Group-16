@@ -1,6 +1,6 @@
 BFB semester project
 
-Group 16
+Group 16:
 Heinrich Alberts u22611632
 Luan Mulder u22564790
 Marta Jhina u21432423
