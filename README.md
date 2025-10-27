@@ -3,6 +3,7 @@ Group 16
 Heinrich Alberts u22611632
 Luan Mulder u22564790
 Marta Jhina u21432423
+
 Project Title:
 
 Informal waste picker logistics web application
