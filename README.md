@@ -1,3 +1,14 @@
+BFB semester project
+
+Group 16:
+1. Heinrich Alberts u22611632
+2. Luan Mulder u22564790
+3. Marta Jhina u21432423
+
+Project Title:
+
+Informal waste picker logistics web application
+
 Project Purpose:
 
 Our group was tasked to develop a practical and impactful project that explores a real-world supply chain problem. We decided to delve into the environmental sector and this linked us directly to one of the major contributors to having clean communities, informal waste pickers. 
@@ -6,18 +17,19 @@ Having these two services, informal waste pickers will be able to focus more on 
 We are also going to have a system by where the waste pickers can have a designated area of material retrieval and this will benefit them with a reduced amount of territorial disputes and create a chance of fairness for them. 
 
 Database Schema:
+Databases have been generated according to the ERD. Random data was generated to fill and complete the tables. 
 
 
 
 ERD:
-
+<img width="857" height="643" alt="Screenshot 2025-10-27 at 08 31 24" src="https://github.com/user-attachments/assets/9175dc18-640d-4286-a4d3-eab1aebba064" />
 
 
 
 
 
  
-+
+
 Steps on how to run project:
 1.	Home page will display three buttons. 
 2.	Collection trucks will lead you to a page whereby a truck can be registered and this small form containing all the details will be sent to us. 
@@ -28,3 +40,5 @@ Steps on how to run project:
 7.	The next page can be accessed via the navigation bar and this can be about us page. 
 8.	Here is a small paragraph of EcoConnect as a company and our aim towards the community and informal waste pickers. 
 9.	Pictures are also included in this page
+    
+
