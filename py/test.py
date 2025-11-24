@@ -55,13 +55,10 @@ class OperatingArea(db.Model):
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
-# Create tables
 with app.app_context():
     db.create_all()
 
-# ====================== ROUTES ======================
 
-# Home route (optional)
 @app.route('/')
 def home():
     return "Waste Management System API Running!"

@@ -32,7 +32,7 @@ class Pickup(db.Model):
 with app.app_context():
     db.create_all()
 
-# Create a waste picker (POST)
+
 @app.route('/api/wastepickers', methods=['POST'])
 def add_wastepicker():
     data = request.json
@@ -41,13 +41,13 @@ def add_wastepicker():
     db.session.commit()
     return jsonify({'id': picker.id, 'name': picker.name, 'location': picker.location}), 201
 
-# Read all waste pickers (GET)
+
 @app.route('/api/wastepickers', methods=['GET'])
 def get_wastepickers():
     pickers = WastePicker.query.all()
     return jsonify([{'id': p.id, 'name': p.name, 'location': p.location} for p in pickers])
 
-# Update a waste picker (PUT)
+
 @app.route('/api/wastepickers/<int:picker_id>', methods=['PUT'])
 def update_wastepicker(picker_id):
     picker = WastePicker.query.get(picker_id)
@@ -59,7 +59,7 @@ def update_wastepicker(picker_id):
     db.session.commit()
     return jsonify({'id': picker.id, 'name': picker.name, 'location': picker.location})
 
-# Create a truck (POST)
+
 @app.route('/api/trucks', methods=['POST'])
 def add_truck():
     data = request.json
@@ -68,13 +68,13 @@ def add_truck():
     db.session.commit()
     return jsonify({'id': truck.id, 'license_plate': truck.license_plate, 'driver_name': truck.driver_name}), 201
 
-# Read all trucks (GET)
+
 @app.route('/api/trucks', methods=['GET'])
 def get_trucks():
     trucks = Truck.query.all()
     return jsonify([{'id': t.id, 'license_plate': t.license_plate, 'driver_name': t.driver_name} for t in trucks])
 
-# Update a truck (PUT)
+
 @app.route('/api/trucks/<int:truck_id>', methods=['PUT'])
 def update_truck(truck_id):
     truck = Truck.query.get(truck_id)
@@ -87,7 +87,7 @@ def update_truck(truck_id):
     return jsonify({'id': truck.id, 'license_plate': truck.license_plate, 'driver_name': truck.driver_name})
 
 
-# Create a location (POST)
+
 @app.route('/api/locations', methods=['POST'])
 def add_location():
     data = request.json
