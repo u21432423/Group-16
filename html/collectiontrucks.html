@@ -34,7 +34,7 @@
     <section id="infosection">
          <div class="info">
             <h2>Truck Information</h2>
-            <form>
+            <form action="http://127.0.0.1:5000/register/truckcompany" method="POST">
             <label for="companyName">Name of Company</label>
             <input id="companyName" name="companyName" type="text" placeholder="Name of Company" />
 
@@ -45,9 +45,17 @@
             <div class="location-group">
                 <select id="locationSelect" name="locations">
                     <option value="" disabled selected>Select Location</option>
-                    <option value="loc1">Location 1</option>
-                    <option value="loc2">Location 2</option>
-                    <option value="loc3">Location 3</option>
+                    <option value="loc1">Ennerdale Landfill Site (Lawley, Johannesburg South)</option>
+                    <option value="loc2">New England Road Landfill Site (Johannesburg)</option>
+                    <option value="loc3">Makhabisi Recycling and Trading (Reiger Park, Ekurhuleni)</option>
+                    <option value="loc3">Waste Collection Community Association (WCCA), Gauteng</option>
+                    <option value="loc3">Soshanguve Area (Pretoria) - informal waste pickers sorting and selling</option>
+
+                    <option value="loc2">Brackenfell Industria (TW Waste Paper buying centre)</option>
+                    <option value="loc2">Cape Town Municipality Recycling and Waste Drop-off Facilities</option>
+                    <option value="loc2">Stellenbosch Farms - drop-off points</option>
+                    <option value="loc2">Strand - recycling drop-off areas</option>
+                    <option value="loc2">Tokai and Table View areas: community collection points</option>
                 </select>
             <button type="button">Add Location</button>
             </div>
@@ -111,7 +119,7 @@
             <img src="../images/graph1-mock.png" alt="graph1-mock" width="400" height="300">
             <img src="../images/graph2-mock.png" alt="graph2-mock" width="400" height="300">
             <img src="../images/graph3-mock.png" alt="graph3-mock" width="400" height="300">
-         </div>       
+         </div>
     </section>
     </body>
 </html>
