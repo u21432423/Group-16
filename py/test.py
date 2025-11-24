@@ -80,7 +80,7 @@ def register_wastepicker():
         db.session.commit()
         sawprs_id = picker.SAWPRS_id
 
-    # Create user_auth entry
+    
     user = UserAuth(
         name=data['name'],
         surname=data['surname'],
@@ -93,7 +93,7 @@ def register_wastepicker():
 
     return "<h2>Success! Waste Picker Registered.</h2><a href='wastepickers.html'>Go Back</a>"
 
-# === TRUCK COMPANY REGISTRATION (collectiontrucks.html) ===
+
 @app.route('/register/truckcompany', methods=['POST'])
 def register_truckcompany():
     data = request.form
@@ -102,7 +102,7 @@ def register_truckcompany():
     email = data['emailAddress']
     location = data.get('locationSelect', 'Unknown Location')
 
-    # Handle multiple trucks (even if only one is filled)
+    
     plates = request.form.getlist('truckNumberPlate[]')
     weights = request.form.getlist('truckWeight[]')
     volumes = request.form.getlist('truckVolume[]')
@@ -117,13 +117,13 @@ def register_truckcompany():
             truck_number_plate=plates[i],
             weight_kg=float(weights[i]) if weights[i] else None,
             volume_cm3=float(volumes[i]) if volumes[i] else None,
-            vehicle_id=1001  # placeholder
+            vehicle_id=1001  
         )
         db.session.add(truck)
         db.session.commit()
         created_truck_ids.append(truck.truck_drivers_id)
 
-    # Link to user_auth
+    
     user = UserAuth(
         name=company_name,
         surname="Company",
@@ -134,7 +134,7 @@ def register_truckcompany():
     db.session.add(user)
     db.session.commit()
 
-    # Optional: Save operating area
+   
     if created_truck_ids:
         area = OperatingArea(
             municipality_id=10,
@@ -147,7 +147,7 @@ def register_truckcompany():
 
     return "<h2>Success! Truck Company & Trucks Registered.</h2><a href='collectiontrucks.html'>Go Back</a>"
 
-# === KPI / Stats ===
+
 @app.route('/api/stats')
 def stats():
     return jsonify({
@@ -157,7 +157,7 @@ def stats():
         "total_users": UserAuth.query.count()
     })
 
-# === Debug: See all data ===
+
 @app.route('/debug')
 def debug():
     html = "<h1>Database Contents</h1>"
