@@ -96,13 +96,13 @@ def add_location():
     db.session.commit()
     return jsonify({'id': loc.id, 'name': loc.name, 'address': loc.address}), 201
 
-# Read all locations (GET)
+
 @app.route('/api/locations', methods=['GET'])
 def get_locations():
     locations = Location.query.all()
     return jsonify([{'id': l.id, 'name': l.name, 'address': l.address} for l in locations])
 
-# Update a location (PUT)
+
 @app.route('/api/locations/<int:loc_id>', methods=['PUT'])
 def update_location(loc_id):
     loc = Location.query.get(loc_id)
@@ -114,7 +114,7 @@ def update_location(loc_id):
     db.session.commit()
     return jsonify({'id': loc.id, 'name': loc.name, 'address': loc.address})
 
-# Create a pickup (POST)
+
 @app.route('/api/pickups', methods=['POST'])
 def add_pickup():
     data = request.json
@@ -134,7 +134,7 @@ def add_pickup():
         'volume': pickup.volume
     }), 201
 
-# Read all pickups (GET)
+
 @app.route('/api/pickups', methods=['GET'])
 def get_pickups():
     pickups = Pickup.query.all()
@@ -146,7 +146,7 @@ def get_pickups():
         'volume': p.volume
     } for p in pickups])
 
-# Update a pickup (PUT)
+
 @app.route('/api/pickups/<int:pickup_id>', methods=['PUT'])
 def update_pickup(pickup_id):
     pickup = Pickup.query.get(pickup_id)

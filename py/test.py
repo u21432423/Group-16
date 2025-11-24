@@ -63,12 +63,12 @@ with app.app_context():
 def home():
     return "Waste Management System API Running!"
 
-# === WASTE PICKER REGISTRATION (wastepickers.html) ===
+
 @app.route('/register/wastepicker', methods=['POST'])
 def register_wastepicker():
     data = request.form
 
-    # Create waste picker entry
+   
     sawprs_id = data.get('sawprs-id')
     if sawprs_id:
         picker = WastePicker(SAWPRS_id=int(sawprs_id), registration_status=True)
