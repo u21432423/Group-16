@@ -37,4 +37,14 @@ Steps on how to run project:
 9.	Pictures are also included in this page
 
 Additions to our updates project:
-1. 5 endpoints were added and 
+1. Added 5 + Flask API endpoints for key entities (Waste pickers, trucks, locations, pickups).
+2. Implemented POST, GET and PUT endpoints for Waste pickers, trucks, locations and pickups.
+3. Added input validation.
+4. Converted static data into a fully dynamic database driven system by implementing a SQL model.
+5. Ensured models follow the ERD structure above.
+6. Connected the frontend pages to the API points.
+7. Forms now have a success message when one registers.
+ 
+
+
+
