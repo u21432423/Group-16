@@ -2,8 +2,10 @@ BFB semester project
 
 Group 16:
 1. Heinrich Alberts u22611632
-2. Luan Mulder u22564790
-3. Marta Jhina u21432423
+2. Luan Mulder u22564790:
+   For this project I created the databases, created the ERD and helped with the report. I also created the API and endpoints and helped with editing.
+4. Marta Jhina u21432423:
+   For this project I was involved in doing the report and also the READ me file. I also assisted in some editing of the python code and also in the styling of our website.
 
 Project Title:
 
