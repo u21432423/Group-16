@@ -2,6 +2,7 @@ BFB semester project
 
 Group 16:
 1. Heinrich Alberts u22611632
+    In this projects I contrbuted with the creation of the html and css files. The second part of the project I contributed by linking the database to the front end of our project by using python and flask and worked on the final report.
 2. Luan Mulder u22564790:
    For this project I created the databases, created the ERD and helped with the report. I also created the API and endpoints and helped with editing.
 4. Marta Jhina u21432423:
