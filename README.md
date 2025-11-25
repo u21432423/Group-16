@@ -19,7 +19,7 @@ Database Schema:
 Databases have been generated according to the ERD. Random data was generated to fill and complete the tables. 
 
 
-
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/68e0928d-e9fa-4b0f-851e-86cd99ff2330" />
 
 
 
